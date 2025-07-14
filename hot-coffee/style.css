@@ -1,0 +1,202 @@
+body {
+  background: #e0cda9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.container {
+  position: relative;
+  width: 240px;
+  height: 220px;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+/* Saucer */
+.saucer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  height: 50px;
+  background: #f7f7f7;
+  border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.12);
+  z-index: 1;
+  border: 2px solid #ddd;
+}
+
+/* Cup */
+.cup {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 100px;
+  background: #fff;
+  border-radius: 0 0 80px 80px / 0 0 100px 100px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+  z-index: 2;
+  overflow: visible;
+  border: 3px solid #eee;
+}
+
+/* Coffee */
+.coffee {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  width: 100px;
+  height: 50px;
+  background: #634832; /* Coffee color */
+  border-radius: 0 0 60px 60px / 0 0 40px 40px;
+  z-index: 3;
+  box-shadow: 0 2px 8px #b97a56 inset;
+  border-top: 2px solid #a67c52;
+}
+
+/* Handle */
+.handle {
+  position: absolute;
+  right: -38px;
+  top: 30px;
+  width: 40px;
+  height: 60px;
+  border: 7px solid #fff;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-radius: 50px 50px 50px 50px;
+  z-index: 2;
+  box-shadow: 1px 1px 6px #ccc;
+}
+
+.steam {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  width: 12px;
+  height: 70px;
+  opacity: 0.7;
+  border-radius: 50%;
+  background: linear-gradient(to top, #fff 60%, transparent 100%);
+  z-index: 10;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.steam1 {
+  margin-left: -35px;
+  animation-name: steamUpSway1;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.steam2 {
+  margin-left: 0px;
+  animation-name: steamUpSway2;
+  animation-duration: 3.5s;
+  animation-delay: 1s;
+}
+
+.steam3 {
+  margin-left: 35px;
+  animation-name: steamUpSway3;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes steamUpSway1 {
+  0% {
+    opacity: 0.7;
+    transform: translate(0, 0) scaleX(1) scaleY(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translate(5px, -25px) scaleX(1.1) scaleY(1.3);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(10px, -70px) scaleX(1.2) scaleY(1.5);
+  }
+}
+
+@keyframes steamUpSway2 {
+  0% {
+    opacity: 0.7;
+    transform: translate(0, 0) scaleX(1) scaleY(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translate(-5px, -30px) scaleX(1.1) scaleY(1.3);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -80px) scaleX(1.2) scaleY(1.5);
+  }
+}
+
+@keyframes steamUpSway3 {
+  0% {
+    opacity: 0.7;
+    transform: translate(0, 0) scaleX(1) scaleY(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translate(3px, -20px) scaleX(1.1) scaleY(1.3);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(6px, -60px) scaleX(1.2) scaleY(1.5);
+  }
+}
+
+.biscuit {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px; 
+  height: 180px;
+  background: url('biscoff.png') no-repeat center/contain;
+  z-index: 5;
+  top: -200px; /* Start above the cup */
+  animation: drop-biscuit 1.2s cubic-bezier(0.33, 0, 0.66, 0.33) forwards;
+}
+
+@keyframes drop-biscuit {
+  0% {
+    top: -200px;
+    opacity: 0.8;
+  }
+  80% {
+    top: 110px; /* Just above the cup */
+    opacity: 1;
+  }
+  90% {
+    top: 120px; /* Slight overshoot for bounce */
+  }
+  100% {
+    top: 110px; /* Settle in front of the cup */
+    opacity: 1;
+  }
+}
+
+
