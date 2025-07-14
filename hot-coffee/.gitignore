@@ -13,3 +13,4 @@ node_modules/
 # Logs and temp
 *.log
 *.tmp
+.DS_Store

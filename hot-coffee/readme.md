@@ -15,13 +15,13 @@ Responsive enabled
 
 ## Demo
 
-[View Live Demo](https://yourusername.github.io/your-repo-name/) 
+[View Live Demo](https://ec-wa.github.io/css-demo/hot-coffee/coffee.html) 
 
 ## Usage
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/ec-wa/css-demo.git
    ```
 2. **Open `index.html` in your browser.**
 3. **(Optional) Replace `biscoff.png` with your own biscuit image.**
@@ -29,7 +29,7 @@ Responsive enabled
 ## Folder Structure
 
 ```
-.
+/hot-coffee/
 ├── index.html
 ├── style.css
 ├── biscoff.png
