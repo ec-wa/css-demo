@@ -4,7 +4,7 @@ A pure HTML and CSS demo of a steaming cup of coffee on a saucer, with animated 
 No JavaScript required!
 Responsive enabled
 
-<img src="hot-coffee-demo.jpg" alt="Screenshot of Hot Coffee CSS">
+<img src="hot-coffee-demo.jpg" style="width: 50%; height: auto;" alt="Screenshot of Hot Coffee CSS">
 
 
 ## Features
