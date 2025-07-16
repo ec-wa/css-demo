@@ -2,7 +2,7 @@
 
 A minimal, easy-to-use HTML, CSS, and JavaScript product slider—perfect for portfolios, stores, demos, or landing pages. Responsive supported! 
 
-<img src="simple-slider.jpg" style="width: 50%; height: auto;" alt="Screenshot of Simple Product Slider">
+<img src="simple-slider.jpg" style="width: 80%; height: auto;" alt="Screenshot of Simple Product Slider">
 
 ## Features
 
