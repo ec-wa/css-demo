@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# npm or Node.js (if you ever use them)
+node_modules/
+
+# Logs and temp
+*.log
+*.tmp
+.DS_Store
