@@ -2,7 +2,7 @@
 
 A sleek, responsive product slider built with HTML, CSS, and JavaScript. Features smooth horizontal scrolling, card enlargement on hover/focus, and intuitive dot navigation. Perfect for ecommerce product showcases and portfolio carousels!
 
-<img src="hover-enlarge-slider.jpg" style="width: 80%; height: auto;" alt="Screenshot of Hover Enlarge Product Slider">
+<img src="hover-enlarge-slider.jpg" style="width: 60%; height: auto;" alt="Screenshot of Hover Enlarge Product Slider">
 
 ## Features
 
